@@ -91,7 +91,7 @@ class HomePage(tk.Frame):
             self.show("Please select a date.")
             return
 
-        if self.event[2] == date: return # return if the same date was selected
+        if self.event[2] == date: return # return if the same date was selected #posicao 2 do evento que e a data
         
         self.event = self.app.db.get_event_by_date(date) # update event
         self.event_title_label.configure(text=f"{self.event[1]} | {self.event[2]}") # update event label

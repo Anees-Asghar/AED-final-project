@@ -95,8 +95,7 @@ def create_db(db_name):
 
     # populate the seat_types table
     cursor.execute(
-        "INSERT INTO seat_types (type, value) VALUES (?, ?), (?, ?);",
-        ["Normal", 4, "VIP", 12]
+        "INSERT INTO seat_types (type, value) VALUES (?, ?), (?, ?);",#(?, ?), (?, ?)#queremos adcionar o par "Normal", 4 e  "VIP", 12
     )
 
     # populate the seats table
